@@ -1,0 +1,31 @@
+.lai_lunbo_0 {
+	height: 300px;
+	width: 600px;
+	position: relative;
+	border: 1px solid silver;
+	overflow: hidden;
+}
+.lai_lunbo_0_imgBox {
+	height: 300px;
+	width: 3000px;
+	border: none;
+	position: absolute;
+}
+.lai_lunbo_0 img {
+	height: 300px;
+	width: 600px;
+	float: left;
+}
+.lai_lunbo_0_nav {
+	position: absolute;
+	bottom: 0px;
+	left: 220px;
+	width: 100px;
+}
+.lai_lunbo_0 a {
+	height: 10px;
+	width: 10px;
+	border: 1px solid #Fff;
+	display: inline-block;
+	border-radius: 50%;
+}
