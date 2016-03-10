@@ -1,5 +1,6 @@
 window.onload = function() {
-	lai_lunbo_0();
+	// lai_lunbo_0();
+	lai_lunbo_2();
 }
 function lai_lunbo_0 (dir,loop,inter) {
 	var box = document.getElementsByClassName("lai_lunbo_0_imgBox")[0];
@@ -115,5 +116,45 @@ function lai_lunbo_0 (dir,loop,inter) {
 			li[4].style.backgroundColor = "#fff";
 			break;
 		}
+	}
+}
+
+
+function lai_lunbo_2 () {
+	var list = document.querySelectorAll(".lai_lunbo_2_imgBox img");
+	var change = null;
+	// replaceAuto();
+
+	function replaceAuto() {
+		var i = 0;
+		var j = 0;
+		change = setInterval(function(){
+			j = i%4;
+			console.log(j+','+(j+1));
+			replace(list[j],list[j+1]);
+			i++;
+		},1500);
+	}
+
+	
+	function replace(hiddenEle,showEle) {
+
+		hiddenEle.style.display = "block";
+		hiddenEle.style.zIndex = 2;
+		showEle.style.display = "block";
+		hiddenEle.style.opacity = 1;
+
+		var speed = (hiddenEle.style.opacity)/40;
+		var change = setInterval(function(){
+
+			hiddenEle.style.opacity = hiddenEle.style.opacity - speed;
+			if (hiddenEle.style.opacity <=0 ) {
+				clearInterval(change);
+
+				hiddenEle.style.display = "none";
+				hiddenEle.style.opacity = 1;
+				hiddenEle.style.zIndex = 0;
+			}
+		},16);
 	}
 }

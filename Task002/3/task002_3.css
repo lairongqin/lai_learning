@@ -1,3 +1,4 @@
+/*轮播一*/
 .lai_lunbo_0 {
 	height: 300px;
 	width: 600px;
@@ -29,3 +30,40 @@
 	display: inline-block;
 	border-radius: 50%;
 }
+
+
+/*轮播二*/
+
+
+.lai_lunbo_2 {
+	height: 300px;
+	width: 600px;
+	margin-top: 10px;
+	border: 1px solid black;
+	position: relative;
+}
+.lai_lunbo_2_imgBox img{
+	height: 300px;
+	width: 600px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.lai_lunbo_2_nav {
+	position: absolute;
+	bottom: 0px;
+	left: 220px;
+	width: 100px;
+}
+.lai_lunbo_2 a {
+	height: 10px;
+	width: 10px;
+	border: 1px solid #Fff;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+
+
+
