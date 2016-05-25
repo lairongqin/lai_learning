@@ -1,0 +1,38 @@
+/*youxi*/
+.allbg {
+	width:800px;
+	height:600px;
+	margin:0 auto;
+}
+#allcanvas{
+	position:relative;
+	width:800px;
+	height:600px;
+	margin:0;
+}
+#canvas1{
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:1;
+}
+#canvas2{
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:0;
+}
+#play {
+	position:absolute;
+	z-index:2;
+	left:360px;
+	top:260px;
+}
+#reset{
+	position:absolute;
+	height:100px;
+	width:300px;
+	left:250px;
+	top:250px;	
+	z-index:2;
+}
